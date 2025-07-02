@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | Typing Speed Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #1f1c2c, #928dab, #2c3e50, #2c3e50);
+      background-size: 400% 400%;
+      animation: bgAnimate 15s ease infinite;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes bgAnimate {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .intro-box {
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #ffe84a;
+      text-shadow: 0 0 15px #ffe84a88;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 15px 35px;
+      background: #ffe84a;
+      color: #111;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(255, 232, 74, 0.4);
+      transition: 0.3s ease;
+    }
+
+    a.button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 30px rgba(255, 232, 74, 0.6);
+    }
+
+    .credit {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1rem;
+      }
+      .intro-box {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro-box">
+    <h1>🚀 Welcome to Typing Speed Game</h1>
+    <p>
+      Built for speed lovers and code warriors! 💻<br>
+      Test your typing accuracy, improve your WPM, and challenge yourself every day.<br>
+      <br>
+      This game was proudly developed by <strong>Mohamed Maruf Kureshi</strong> — a passionate web developer who blends creativity with code.🖤<br><br>
+      Ready to unlock your full typing potential?
+    </p>
+    <a href="game.html" class="button">Start Game ➡</a>
+    <div class="credit">Designed & Developed by Maruf Kureshi 💻</div>
+  </div>
+</body>
+</html>
