@@ -71,7 +71,7 @@ window.onload = function () {
   // Load Random Quote
   function loadQuote() {
     let randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteDisplay.innerText = quotes[randomIndex];
+    quoteDisplay.textContent= quotes[randomIndex];
   }
 
   // Start Game
@@ -89,12 +89,12 @@ window.onload = function () {
   // Check Result
   function checkResult() {
     let typedText = quoteInput.value.trim().toLowerCase();
-    let originalText = quoteDisplay.innerText.trim().toLowerCase();
+    let originalText = quoteDisplay.textContent.trim().toLowerCase();
     
 
     if (typedText.length === 0) {
     result.innerHTML = `
-      <p style="background:		rgba(128, 123, 123, 0.14) ;color:black; font-size: 19px; font-weight:900;">
+      <p style="background:rgba(128, 123, 123, 0.14) ;color:black; font-size: 19px; font-weight:900;">
         🤷‍♂️Please type the sentence before checking result!
       </p>`;
     return;
